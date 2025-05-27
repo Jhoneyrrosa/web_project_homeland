@@ -1,4 +1,4 @@
-.lead {
+.lead {font-family: "inter";
  width: 984px;
  margin: 0 auto;
  text-align: center;
@@ -6,7 +6,8 @@
 
 .lead__title {
     max-width: 75%;
-    margin: 90px auto 32px;
+    padding: 90px 0 32px;
+    margin: 0 auto;
     font-weight: 900;
     font-size: 96px;
     line-height: 1;
@@ -23,5 +24,8 @@
 }
 
 .lead__image {
-    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    display: block;
 }
