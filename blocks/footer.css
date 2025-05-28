@@ -1,10 +1,10 @@
 .footer {
- width: 100%;   
+ max-width: 100%;   
  
 }
 
 .footer__copyright {
-    width: 166px;
+    max-width: 166px;
     font-weight: 100;
     font-size: 10px;
      margin: 92px auto 0;

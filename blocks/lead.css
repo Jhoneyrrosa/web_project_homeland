@@ -1,5 +1,6 @@
-.lead {font-family: "inter";
- width: 984px;
+.lead {
+font-family: "inter";
+ max-width: 984px;
  margin: 0 auto;
  text-align: center;
 }
@@ -28,4 +29,20 @@
     max-height: 100%;
     object-fit: cover;
     display: block;
+}
+
+@media screen and (max-width: 768px){
+    .lead__title {
+        font-size: 75px;
+       width: 100%;
+
+
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .lead__title {
+    font-size: 64px;
+    }
+    
 }
