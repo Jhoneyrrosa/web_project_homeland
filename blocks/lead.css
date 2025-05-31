@@ -34,15 +34,24 @@ font-family: "inter";
 @media screen and (max-width: 768px){
     .lead__title {
         font-size: 75px;
-       width: 100%;
+        padding-bottom: 25px;
+        line-height: 79px;
+    }
 
-
+    .lead__subtitle {
+        margin-bottom: 30px;
     }
 }
 
 @media screen and (max-width: 320px) {
     .lead__title {
-    font-size: 64px;
+    padding: 50px 0 16px;
+    line-height: 44px;
+    font-size: 40px;
+    }
+
+    .lead__subtitle {
+        font-size: 16px;
     }
     
 }
