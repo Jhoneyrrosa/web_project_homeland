@@ -8,14 +8,14 @@
     font-weight: 900;
     font-size: 63px;
     line-height: 1;
-    letter-spacing: 0%;
+    letter-spacing: 0;
 }
 
 .intro__subtitle {
     max-width: 738px;
     font-weight: 400;
     font-size: 24px;
-    letter-spacing: 0%;
+    letter-spacing: 0;
 }
 
 .intro__author {
@@ -32,7 +32,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
-    letter-spacing: 0%;
+    letter-spacing: 0;
 }
 
 @media screen and (max-width: 768px){
