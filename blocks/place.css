@@ -1,0 +1,29 @@
+.place {
+margin: 0 148px;
+display: grid;
+grid-template-columns: 460px 1fr;
+grid-template-rows: auto 460px auto;
+grid-template-areas: "title author" "image text" "button text";
+}
+
+.place_title {
+    grid-area: title;
+    
+    
+}
+
+.place__author {
+    grid-area: author;
+}
+
+.place__image {
+    grid-area: image;
+}
+
+.place__textos {
+    grid-area: text;
+}
+
+.place__button {
+    grid-area: button;
+}
