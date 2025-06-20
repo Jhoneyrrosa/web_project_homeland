@@ -1,21 +1,22 @@
 .place {
-margin: 0 148px;
+max-width: 984px;
+margin: 0 auto;
 display: grid;
-grid-template-columns: 460px 1fr;
+grid-template-columns: 1fr 1fr;
 grid-template-rows: auto auto;
 grid-template-areas: "title author" "image text" "button text";
 column-gap: 40px;
 row-gap: 40px;
 }
 
-.place_title {
+.place__title {
     grid-area: title;
     font-weight: 900;
     font-size: 72px;
-    line-height: 1.5;
+    line-height: 1.05;
     grid-column: 1;
     align-self: end;
-   margin: 0;
+    margin: 0;
 }
 
 .place__author {
@@ -24,7 +25,6 @@ row-gap: 40px;
 }
 
 .place__artista {
-    max-width: 85px;
     font-weight: 400;
     font-size: 12px;
     line-height: 100%;
@@ -34,7 +34,6 @@ row-gap: 40px;
 }
 
 .place__artista-author {
-max-width: 455px;
 font-weight: 400;
 font-size: 18px;
 line-height: 0.5;
@@ -43,11 +42,14 @@ align-self: end;
 
 .place__image {
     grid-area: image;
-    max-width: 460px;
+   width: 100%;
     gap: 10px;
    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
 
-    
+.place__image:hover {
+   opacity: 50%;
+
 }
 
 .place__textos {
@@ -55,22 +57,100 @@ align-self: end;
     display: flex;
     flex-direction: column;
     max-width: 484px;
+    line-height: 1.63;
     font-weight: 400;
     font-size: 18px;
 }
 
 .place__textos p {
-    margin-top: 25px;
+    margin: 25px 0 0;
+}
+
+.place__textos p:first-of-type {
+    margin-top: 0;
 }
 
 .place__button {
     grid-area: button;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
     width: 356px;
-    height: 48px;
+    max-height: 48px;
     font-weight: 600;
     font-size: 18px;
     background: linear-gradient(#0278FE 0%, #003A7B 99.99%);
     cursor: pointer;
     margin-top: 48px;
+    color: #fff;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    padding: 16px 8px;
+    
+}
 
+.place__button:hover {
+    background: linear-gradient(90deg, rgba(2, 120, 254, 0.25) 0%, rgba(0, 58, 123, 0.25) 99.98%);
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .place {
+        margin: 0 24px;
+        grid-template-columns: 340px 1fr;
+    }
+
+   .place__title {
+    font-size: 42px;
+    line-height: 1.0;
+    margin: 0;
+}
+
+.place__author {
+    font-size: 18px;
+}
+
+.place__textos {
+    font-size: 16px;
+}
+}
+
+@media screen and (max-width: 660px) {
+      .place {
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "title" "author" "image" "texto" "button";
+    }
+
+       .place__title {
+    font-size: 32px;
+    line-height: 1.5;
+    margin: 0 auto;
+    grid-area: title;
+}
+
+ .place__author {
+    padding-left: 16px;
+    grid-area: author;
+}
+
+.place__image {
+    margin: 0;
+   width: 100%;
+   grid-area: image;
+ }
+
+.place__textos {
+    margin: 30px auto 0;
+    padding: 0 16px;
+    grid-area: texto;
+}
+
+.place__button {
+  width: 90%;
+  margin: 30px auto 0;
+  grid-area: button;
+}
 }
