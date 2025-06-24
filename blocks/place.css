@@ -77,7 +77,7 @@ align-self: end;
     max-height: 48px;
     font-weight: 600;
     font-size: 18px;
-    background: linear-gradient(#0278FE 0%, #003A7B 99.99%);
+    background: linear-gradient(90deg, #0278FE 0%, #003A7B 99.98%);
     cursor: pointer;
     margin-top: 48px;
     color: #fff;
@@ -109,7 +109,7 @@ align-self: end;
 
 .place__author {
     font-size: 18px;
-    line-height: 1,5;
+    line-height: 1.5;
 }
 
 .place__textos {
